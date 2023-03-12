@@ -1,56 +1,64 @@
-section.filters
-{
-	background-color: white;
-	height: 70px;
-	width: 100%;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
+/*
+ * === Filters style ===
+ */
+
+/* Filters style */
+.filters {
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
 }
-button
-{
-	font-size: 18px;
-	background-color: #FF5A5F;
-	height: 48px;
-	color: white;
-	margin-right: 4%;
-	width: 20%;
-	border: none;
-	border-radius: 4px;
-	order: 3;
+/* Search button style */
+.filters button{
+    font-size: 18px;
+    background-color: #ff5a5f;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    float: right;
+    margin: 12px 30px;
 }
-button:hover
-{
-	opacity: 0.9;
+
+/*change opacity to 90% when the mouse is on the button*/
+.filters button:hover{
+    background-color: rgba(255, 90, 95, .9);
 }
-div.locations, div.amenities
-{
-	width: 25%;
-	height: 100%;
+
+/*locations and amenities*/
+.locations,
+.amenities {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
 }
-div.locations
-{
-	order: 1;
-	border-right: 1px solid #DDDDDD;
+/*locations*/
+.locations{
+    border-right: 1px solid #dddddd;
 }
-div.amenities
-{
-	order: 2;
+
+/* places header*/
+.filters h2,
+.filters h3,
+.filters h4 {
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border.box;
+            box-sizing: border-box;
+            margin: 0;
 }
-div.locations h3, div.amenities h3
-{
-	font-weight: 600;
-	text-align: left;
-	margin-top: 14px;
-	margin-bottom: 4px;
+/* Header 3 style */
+.filters h3 {
+    font-size: 1.17em;
+    font-weight: 600;
+    height: 50%;
+    padding: 15.5px 0 0 30px;
 }
-div.locations h4, div.amenities h4
-{
-	font-weight: 400;
-	font-size: 14px;
-	text-align: left;
-	margin: 0;
+.filters h4 {
+    font-size: 14px;
+    font-weight: 400;
+    height: 50%;
+    padding: 5px 0 12px 30px;
 }

@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Review Class"""
+"""Module for Review class."""
+
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """pass"""
+    """Class representing a Review."""
     place_id = ""
     user_id = ""
     text = ""
